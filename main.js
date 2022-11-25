@@ -1,16 +1,16 @@
 const shareBtn = document.querySelector('.share__icon--btn');
-const shareIcons = document.querySelector('.share__container');
-const shareProfileSection = document.querySelector('.shareprofile__container');
-const profile = document.querySelector('.profile__container');
+const shareIconsBox = document.querySelector('.share__container');
+const shareProfileBox = document.querySelector('.shareprofile__container');
+const profileBox = document.querySelector('.profile__container');
 
 
 
 function showIcons () {
     
-        profile.style.visibility = "hidden";
-        shareIcons.style.visibility="visible";
-        shareProfileSection.style.backgroundColor = "var(--VERYDARKGRAYISHBLUECOLOR)";
-    
+    shareBtn.classList.add('share__icon--btn--active');
+    shareIconsBox.classList.add('share__container--active');
+    shareProfileBox.classList.add('shareprofile__container--bg');
+    profileBox.classList.add('profile__container--close');
     
 }
 

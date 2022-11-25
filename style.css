@@ -68,11 +68,15 @@ body {
 }
 
 .shareprofile__container {
-    /* background-color: var(--VERYDARKGRAYISHBLUECOLOR); */
+    
     padding: 0px 30px 30px 30px;
     position: relative;
     width: 100%;
     min-height: 80px;
+}
+
+.shareprofile__container--bg {
+    background-color: var(--VERYDARKGRAYISHBLUECOLOR);
 }
 
 .share__icon--btn {
@@ -88,6 +92,11 @@ body {
     cursor: pointer;
 }
 
+.share__icon--btn--active {
+    background-color: green;
+}
+
+
 .profile__container, .share__container  {
     top: 20px;
     left: 10px;
@@ -99,8 +108,16 @@ body {
     align-items: center;
 }
 
+.profile__container--close {
+    visibility: hidden;
+}
+
 .share__container {
     visibility: hidden;
+}
+
+.share__container--active {
+    visibility: visible;
 }
 
 .profile__img {
@@ -194,6 +211,14 @@ body {
 
     .share__container > * {
         z-index: 1;
+    }
+
+    .shareprofile__container--bg {
+        background-color: transparent;
+    }
+
+    .profile__container--close {
+            visibility: visible;
     }
 
     
