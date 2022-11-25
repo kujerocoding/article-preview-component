@@ -93,7 +93,7 @@ body {
 }
 
 .share__icon--btn--active {
-    background-color: green;
+    background-color: var(--VERYDARKGRAYISHBLUECOLOR);
 }
 
 
