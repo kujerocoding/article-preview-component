@@ -67,16 +67,28 @@ body {
 .shareprofile__container {
     outline: 1px solid blue;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 20px 30px 20px 30px;
 }
 
 .profile__container {
     outline: 1px solid green;
     display: flex;
+    gap: 20px;
 }
 .profile__img {
     width: 50px;
     border-radius: 50%;
+}
+
+.profile__name {
+    color: var(--VERYDARKGRAYISHBLUECOLOR);
+}
+
+.profile__date {
+    display: block;
+    color: var(--GRAYISHBLUE);
+    font-weight: lighter;
 }
 
 .share__container {
